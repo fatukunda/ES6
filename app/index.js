@@ -1,3 +1,5 @@
+import { callbackify } from "util";
+
 //Diclaring variables with let..................................
 // function run() {
 //     //variable b declared
@@ -83,10 +85,26 @@
 
 //Modules .........................................................................................
 
-import {students, total} from './students';
-import { add, multiply } from './calculator';
-console.log(students);
-console.log(total);
+// import {students, total} from './students';
+// import { add, multiply } from './calculator';
+// console.log(students);
+// console.log(total);
 
-console.log(add(20, 54));
-console.log(multiply(20, 10));
+// console.log(add(20, 54));
+// console.log(multiply(20, 10));
+
+//CLASSES ...........................................................................................
+
+import Person from './person';
+class Teacher extends Person {
+    constructor(name, country){
+        super(name, country)
+    }
+    greet(){
+        console.log(`Hi, I'm ${this.name} from ${this.country} and I'm a teacher `);
+    }
+
+}
+
+const newTeacher = new Teacher('Frank', 'Uganda');
+newTeacher.greet();
