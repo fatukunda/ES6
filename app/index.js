@@ -60,4 +60,13 @@
 // const ages = [20, 30, 71, 62];
 // const [x, ...y] = ages;
 // console.log(x, y);
+
+//Destructuring assignment with objects ..........................................
+
+const wizard = {
+    magical: true,
+    power: 10
+}
+const {magical, power} = wizard;
+console.log(magical, power);
   
