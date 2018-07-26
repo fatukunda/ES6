@@ -40,3 +40,11 @@ function print2(...a) {
 };
 let x = [1,2,3];
 print2(x);
+
+function butter(...b) {
+    let a = [1, 2, 3, ...b];
+    console.log( a);
+  }
+  
+  butter(4, 5, 6);
+  
