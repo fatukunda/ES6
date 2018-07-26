@@ -1,0 +1,12 @@
+function run() {
+    //variable b declared
+    let b = 2;
+    console.log(b);
+    //Another variable b declared in a different scope and doesn't affect the other variable b above
+    {
+        let b = 3;
+        console.log(b);
+    }
+
+}
+run();
