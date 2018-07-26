@@ -12,8 +12,15 @@
 // }
 // run();
 
+
 //Diclaring variables with const
-const numbers = [1,2,3];
-//the variable cannot be re-assigned but it can be modified.
-numbers.push(4)
-console.log(numbers);
+// const numbers = [1,2,3];
+// //the variable cannot be re-assigned but it can be modified.
+// numbers.push(4)
+// console.log(numbers);
+
+//Template literals
+
+const a = 'hello';
+const b = 'world';
+console.log(`${a} ${b}`);
