@@ -71,12 +71,22 @@
 // console.log(magical, power);
 
 //Arrow functions ...........................................................................
-const scores = [30,90,78,65,72,15];
-const pass = () => {
-    scores.map(score => console.log(score +5));
-}
-pass();
+// const scores = [30,90,78,65,72,15];
+// const pass = () => {
+//     scores.map(score => console.log(score +5));
+// }
+// pass();
 
-scores.filter((score) => {
-    return console.log ( score > 50);
-})
+// scores.filter((score) => {
+//     return console.log ( score > 50);
+// })
+
+//Modules .........................................................................................
+
+import {students, total} from './students';
+import { add, multiply } from './calculator';
+console.log(students);
+console.log(total);
+
+console.log(add(20, 54));
+console.log(multiply(20, 10));
