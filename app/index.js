@@ -1,4 +1,4 @@
-//Diclaring variables with let
+//Diclaring variables with let..................................
 // function run() {
 //     //variable b declared
 //     let b = 2;
@@ -13,14 +13,30 @@
 // run();
 
 
-//Diclaring variables with const
+//Diclaring variables with const.................................
 // const numbers = [1,2,3];
 // //the variable cannot be re-assigned but it can be modified.
 // numbers.push(4)
 // console.log(numbers);
 
 //Template literals
+// const a = 'hello';
+// const b = 'world';
+// console.log(`${a} ${b}`);
 
-const a = 'hello';
-const b = 'world';
-console.log(`${a} ${b}`);
+//The spread operator .........................................
+let array1 = [ 7,8,9];
+let array2 = [6, ...array1, 10];
+console.log(array2);
+
+function print(a, b, c) {
+    console.log(a, b, c);
+};
+let z = [1,2,3];
+print(...z);
+
+function print2(...a) {
+    console.log(a);
+};
+let x = [1,2,3];
+print2(x);
