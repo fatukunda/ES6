@@ -63,10 +63,20 @@
 
 //Destructuring assignment with objects ..........................................
 
-const wizard = {
-    magical: true,
-    power: 10
+// const wizard = {
+//     magical: true,
+//     power: 10
+// }
+// const {magical, power} = wizard;
+// console.log(magical, power);
+
+//Arrow functions ...........................................................................
+const scores = [30,90,78,65,72,15];
+const pass = () => {
+    scores.map(score => console.log(score +5));
 }
-const {magical, power} = wizard;
-console.log(magical, power);
-  
+pass();
+
+scores.filter((score) => {
+    return console.log ( score > 50);
+})
